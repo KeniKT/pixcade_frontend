@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState} from 'react'
 import "./auth.css"
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+
+  const navigate = useNavigate();
+  const handleRoute = () => {
+    navigate("/")
+  }
+  
   return (
     <>
 
@@ -22,6 +29,8 @@ const Register = () => {
                 <option value="2">Gamer</option>
             </select>
             <input className = "button" type="submit" value="Sign-up" />
+            <p style={{ color: "white", cursor: "pointer", display: "flex"}}>Already have an Account? <p style={{ marginLeft: "10px", color: "#E1AF64", cursor: "pointer"}} onClick={handleRoute}>Login</p></p>
+            
         </form>
     </div>
       
