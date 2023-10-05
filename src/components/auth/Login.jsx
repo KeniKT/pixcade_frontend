@@ -6,6 +6,16 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleRoute = () => {
+    fetch("localhost:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: {
+        "username": "user",
+        "password": "pass"
+      }
+    })
     navigate("/register")
   }
   return (

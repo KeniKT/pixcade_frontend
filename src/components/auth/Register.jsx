@@ -6,6 +6,16 @@ const Register = () => {
 
   const navigate = useNavigate();
   const handleRoute = () => {
+    fetch("localhost:3000/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: {
+        "username": "user",
+        "password": "pass"
+      }
+    })
     navigate("/")
   }
   
