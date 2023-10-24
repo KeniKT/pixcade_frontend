@@ -55,7 +55,7 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <input className="button" type="submit" value="Sign-in" />
+          <input className="button" type="submit" value="Sign-in" onClick={() => navigate("/home")} />
           <p style={{ color: "white", cursor: "pointer", display: "flex" }}>
             Don't have an Account?{' '}
             <span
