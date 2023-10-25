@@ -106,6 +106,15 @@
      height: 90px;
 
  }
+ .gap {
+    gap: 10px;
+ }
+
+ .platform-space-game {
+    display: flex;
+    justify-content: space-between;
+    
+} 
 
  .card{
     width: 250px;
@@ -119,4 +128,5 @@
     height: 70%;
     
  }
+ 
 
