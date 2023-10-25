@@ -1,0 +1,46 @@
+.flex-for-upload {
+    display: flex;
+    gap: 30px;
+    
+
+}
+.container-for-game {
+    display: flex;
+    width: 50%;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.description {
+    width: 50%;
+    background-color:  #E6F3F6;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.platform-space {
+    display: flex;
+    justify-content: space-between;
+    
+} 
+.add-btn {
+    width: 60px;
+    height: 30px;
+    background-color: #E1AF64;
+    border-radius: 5px;
+}
+.flex-for-platforms{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.label {
+    font-size: medium;
+   
+    color: whitesmoke;
+}
