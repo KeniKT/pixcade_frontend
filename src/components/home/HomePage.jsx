@@ -21,9 +21,7 @@ function HomePage() {
     navigate("/");
   }
 
-  const handleProfileImageClick = () => {
-    navigate("/editProfile");
-  }
+  
 
 
   return (
@@ -39,7 +37,7 @@ function HomePage() {
         
         <div className='flex'>
 
-        <img src="src\assets\images\profiles\ima.jpg" className='profile-image' onClick={() => navigate("/editProfile")} />
+        <img src="src\assets\images\profiles\ima.jpg" className='profile-image'  />
         <div>
           <label className='welcome-user'> Welcome , user</label>
           <button className="logout-button" onClick={handleLogout} style={logoutButtonStyle}>
@@ -76,7 +74,6 @@ function HomePage() {
             </h2>
             <div className='game-details-row '>
               <div>
-
              <text>Price</text>
              <text>Discount</text>
               </div>
@@ -97,13 +94,13 @@ function HomePage() {
           <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
           <div className='game-details-row '>
              <h2>Game Title</h2>
-             <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+             <div className='platform-space-container'>
+             <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
-            <div>
+            <div className='platform-space-container'>
              <text>Price</text>
              <text>Discount</text>
             </div>
@@ -117,9 +114,9 @@ function HomePage() {
           <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
           <div className='game-details-row '>
              <h2>Game Title</h2>
-             <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+             <div className='platform-space-container'>
+             <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
