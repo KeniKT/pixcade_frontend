@@ -25,17 +25,22 @@ function HomePage() {
     <div>
       <header>
         <img className="logo" src="/images/logos/logo.png" alt="Logo" />
+      
 
         <input type="text" placeholder='search'  />
-        <i className='fa fa-search search-btn' ></i>
+        <i className='fa fa-search search-btn ' ></i>
+
+       
         
-        
+        <div className='flex'>
+
         <img src="src\assets\images\profiles\ima.jpg" className='profile-image'  />
         <div>
           <label className='welcome-user'> Welcome , user</label>
           <button className="logout-button" onClick={handleLogout} style={logoutButtonStyle}>
             Logout
           </button>
+        </div>
         </div>
       </header>
 
@@ -52,15 +57,24 @@ function HomePage() {
               <div className='grid-container'>
               <img className= "grid-item" src= "src\assets\images\screenshots\image.png" />
               <img className= "grid-item" src= "src\assets\images\screenshots\image.png" />
+              <img className= "grid-item" src= "src\assets\images\screenshots\image.png" />
+              <img className= "grid-item" src= "src\assets\images\screenshots\image.png" />
+              <img className= "grid-item" src= "src\assets\images\screenshots\image.png" />
+              <img className= "grid-item" src= "src\assets\images\screenshots\image.png" />
 
               </div>
             
           </div>
           <div className='description'>
+            <h2 className='h2'>
             <label>GAME TITLE</label>
+            </h2>
             <div className='game-details-row '>
+              <div>
+
              <text>Price</text>
              <text>Discount</text>
+              </div>
              <text>Genre</text>
             </div>
             <p className='p'>Mars has been colonized, and Earth's corporate titans fight to dominate this new market. Competition is fierce in this fast-paced economic RTS from Civilization IV Lead Designer, Soren Johnson.
@@ -72,6 +86,8 @@ function HomePage() {
         <h2>
         <header>RELEASES</header>
         </h2>
+        <div className='grid-container-release'>
+
         <div className='card'>
           <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
           <div className='game-details-row '>
@@ -92,11 +108,227 @@ function HomePage() {
           <label > 8</label>
         </div>
 
-       
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+             <text>Genre</text>
+            </div>
+          <label>Rating</label>
+          <label > 8</label>
+        </div>
 
-      
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+             <text>Genre</text>
+            </div>
+          <label>Rating</label>
+          <label > 8</label>
+        </div>
+
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+             <text>Genre</text>
+            </div>
+          <label>Rating</label>
+          <label > 8</label>
+        </div>
+
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+             <text>Genre</text>
+            </div>
+          <label>Rating</label>
+          <label > 8</label>
+        </div>
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+             <text>Genre</text>
+            </div>
+          <label>Rating</label>
+          <label > 8</label>
+        </div>
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+             <text>Genre</text>
+            </div>
+          <label>Rating</label>
+          <label > 8</label>
+        </div>
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+             <text>Genre</text>
+            </div>
+          <label>Rating</label>
+          <label > 8</label>
+        </div>
+
         
+        </div>
 
+
+
+        
+        <h2>
+        <header>Bundle Title</header>
+        </h2>
+
+
+        <div className='grid-container-release'>
+
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+            </div>
+        </div>
+
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+            </div>
+        </div>
+
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+            </div>
+        </div>
+
+        <div className='card'>
+          <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
+          <div className='game-details-row '>
+             <h2>Game Title</h2>
+             <div>
+             <label> icon 1</label>
+             <label> icon 1</label>
+             </div>
+            </div>
+          <div className='game-details-row '>
+            <div>
+             <text>Price</text>
+             <text>Discount</text>
+            </div>
+            </div>
+        </div>
+
+
+        </div>
+  
       </main>
     </div>
   );
