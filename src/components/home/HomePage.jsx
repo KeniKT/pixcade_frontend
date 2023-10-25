@@ -21,10 +21,15 @@ function HomePage() {
     navigate("/");
   }
 
+  const handleProfileImageClick = () => {
+    navigate("/editProfile");
+  }
+
+
   return (
     <div>
       <header>
-        <img className="logo" src="/images/logos/logo.png" alt="Logo" />
+        <img className="logo" src="/images/logos/logo.png" alt="Logo"  />
       
 
         <input type="text" placeholder='search'  />
@@ -34,7 +39,7 @@ function HomePage() {
         
         <div className='flex'>
 
-        <img src="src\assets\images\profiles\ima.jpg" className='profile-image'  />
+        <img src="src\assets\images\profiles\ima.jpg" className='profile-image' onClick={() => navigate("/editProfile")} />
         <div>
           <label className='welcome-user'> Welcome , user</label>
           <button className="logout-button" onClick={handleLogout} style={logoutButtonStyle}>
