@@ -11,7 +11,6 @@ const ProfileEdit = () => {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [passwordError, setPasswordError] = useState("");
     const [externalLink, setExternalLink] = useState("");
-    const [profile , setProfile] = useState("");
   
     const handleEditProfile = (e) => {
       e.preventDefault();
@@ -82,7 +81,8 @@ const ProfileEdit = () => {
             <option value="2">Gamer</option>
           </select>
           <input type="text" placeholder="External Link" value={externalLink} onChange={(e) => setExternalLink(e.target.value)} />
-        <input type="text" placeholder="Profile" value={profile} onChange={(e) => setProfile(e.target.value)} />
+          <textarea className="description" cols="40" rows="10" placeholder="Profile"></textarea>
+
 
 
           <input className="button" type="submit" value="Sign-up" />
