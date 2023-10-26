@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./auth.css";
+// import "./auth.css";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -19,8 +19,8 @@ const Login = () => {
         body: JSON.stringify({
           user: {
             email: email,
-            password: password
-          }
+            password: password,
+          },
         }),
       });
 
@@ -28,6 +28,11 @@ const Login = () => {
         const data = await response.json();
         if (data["success"]) {
           localStorage.setItem("token", data["jwt"]);
+          localStorage.setItem("first_name", data["user"]["first_name"]);
+          localStorage.setItem("last_name", data["user"]["last_name"]);
+          localStorage.setItem("user_name", data["user"]["user_name"]);
+          localStorage.setItem("date_of_birth", data["user"]["date_of_birth"]);
+          localStorage.setItem("user_type", data["user"]["user_type"]);
           localStorage.setItem("email", data["user"]["email"]);
           localStorage.setItem("user_id", data["user"]["id"]);
           navigate("/home");
@@ -61,22 +66,9 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="button" type="submit">
-            Sign-in
-          </button>
-          <p style={{ color: "white", cursor: "pointer", display: "flex" }}>
-            Don't have an Account?{" "}
-            <span
-              style={{
-                marginLeft: "10px",
-                color: "#E1AF64",
-                cursor: "pointer",
-              }}
-              onClick={() => navigate("/register")}
-            >
-              Sign Up
-            </span>
-          </p>
+          <input className="button" type="submit" value="Sign-in" />
+          <p>Don't have an Account?</p>
+          <a href="/register">Sign up</a>
         </form>
       </div>
     </>

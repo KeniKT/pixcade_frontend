@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import "./auth.css";
+import React, { useState } from "react";
+// import "./auth.css";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -14,7 +14,6 @@ const Register = () => {
   const [userType, setUserType] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
 
-
   const handleRegistration = (e) => {
     e.preventDefault();
 
@@ -26,7 +25,7 @@ const Register = () => {
     fetch("http://localhost:3000/users", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         user: {
@@ -36,11 +35,11 @@ const Register = () => {
           email: email,
           password: password,
           user_type: userType,
-          date_of_birth: dateOfBirth
-        }
-      })
+          date_of_birth: dateOfBirth,
+        },
+      }),
     })
-      .then(async response => {
+      .then(async (response) => {
         if (response.ok) {
           navigate("/");
         } else {
@@ -48,12 +47,10 @@ const Register = () => {
           console.error(errorData);
         }
       })
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
       });
-  }
-
-
+  };
 
   return (
     <>
@@ -63,25 +60,65 @@ const Register = () => {
       <div className="main-body">
         <form onSubmit={handleRegistration}>
           <h2 className="header-title">Welcome!</h2>
-          <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-          <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-          <input type="text" placeholder="Username" value={userName} onChange={(e) => setUserName(e.target.value)} />
-          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-          <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+          <input
+            type="text"
+            placeholder="First Name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Username"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
           {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
-          <input type="date" placeholder="Date of Birth" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} />
-          <select id="account-type-select" value={userType} onChange={(e) => setUserType(e.target.value)}>
+          <input
+            type="date"
+            placeholder="Date of Birth"
+            value={dateOfBirth}
+            onChange={(e) => setDateOfBirth(e.target.value)}
+          />
+          <select
+            id="account-type-select"
+            value={userType}
+            onChange={(e) => setUserType(e.target.value)}
+          >
             <option value="developer">Developer</option>
             <option value="gamer">Gamer</option>
           </select>
 
           <input className="button" type="submit" value="Sign-up" />
-          <p style={{ color: "white", cursor: "pointer", display: "flex" }}>Already have an Account? <p style={{ marginLeft: "10px", color: "#E1AF64", cursor: "pointer" }} onClick={() => navigate("/")}>Login</p></p>
+          <p>Already have an Account?</p>
+          <a href="/">Sign in</a>
         </form>
       </div>
     </>
   );
-}
+};
 
 export default Register;
