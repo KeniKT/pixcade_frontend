@@ -71,11 +71,13 @@ function HomePage() {
             </h2>
             <div className='game-details-row '>
               <div>
-
              <text>Price</text>
              <text>Discount</text>
-              </div>
+            </div>
              <text>Genre</text>
+            <i class="fab fa-windows"></i>
+            <i class="fab fa-apple"></i>
+           
             </div>
             <p className='p'>Mars has been colonized, and Earth's corporate titans fight to dominate this new market. Competition is fierce in this fast-paced economic RTS from Civilization IV Lead Designer, Soren Johnson.
             </p>
@@ -92,9 +94,9 @@ function HomePage() {
           <img className= "card-image" src= "src\assets\images\screenshots\image.png" />
           <div className='game-details-row '>
              <h2>Game Title</h2>
-             <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+             <div >
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-apple"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -113,8 +115,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -133,8 +135,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -153,8 +155,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -173,8 +175,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -192,8 +194,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -211,8 +213,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -230,8 +232,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -263,8 +265,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -280,8 +282,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -297,8 +299,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
@@ -314,8 +316,8 @@ function HomePage() {
           <div className='game-details-row '>
              <h2>Game Title</h2>
              <div>
-             <label> icon 1</label>
-             <label> icon 1</label>
+            <i class="fab fa-windows"></i>
+             <i class="fab fa-linux"></i>
              </div>
             </div>
           <div className='game-details-row '>
