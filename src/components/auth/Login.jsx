@@ -7,18 +7,20 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async (email, password) => {
+  const handleLogin = async (e) => {
+    e.preventDefault(); // Prevent form submission and page refresh
+
     try {
-      const response = await fetch("http://127.0.0.1:3000/sign_in", {
+      const response = await fetch("http://localhost:3000/sign_in", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
           user: {
-            email,
-            password,
-          },
+            email: email,
+            password: password
+          }
         }),
       });
 
@@ -26,16 +28,17 @@ const Login = () => {
         const data = await response.json();
         if (data["success"]) {
           localStorage.setItem("token", data["jwt"]);
-          localStorage.setItem("username", data["user"]["full_name"]);
           localStorage.setItem("email", data["user"]["email"]);
           localStorage.setItem("user_id", data["user"]["id"]);
           navigate("/home");
+        } else {
+          console.error("Authentication failed");
         }
       } else {
         console.error("Authentication failed");
       }
     } catch (error) {
-      console.error("Network error:", error);
+      console.error(error);
     }
   };
 
@@ -58,14 +61,9 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <input
-            className="button"
-            type="submit"
-            value="Sign-in"
-            onClickCapture={() => {
-              handleLogin(email, password);
-            }}
-          />
+          <button className="button" type="submit">
+            Sign-in
+          </button>
           <p style={{ color: "white", cursor: "pointer", display: "flex" }}>
             Don't have an Account?{" "}
             <span
